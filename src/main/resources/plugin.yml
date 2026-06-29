@@ -1,0 +1,43 @@
+name: MineSkyGriefPrevention
+version: '1.0.1-BETA'
+main: net.minesky.MineSkyGriefPrevention
+api-version: '1.19'
+authors: [Bruno C. (zBrunoC), Giovanne D. (Drawn)]
+depend: [GriefPrevention, SuperVanish, PlaceholderAPI]
+commands:
+  terreno:
+    description: Comando para visualizar os terrenos.
+    usage: /terreno [player/tp/ban/kick] [id] [player]
+    aliases: [terrenotp]
+  confiar:
+    description: Comando para confiar alguém no seu terreno.
+    usage: /confiar <nick>
+  desconfiar:
+    description: Comando para desconfiar alguém no seu terreno.
+    usage: /desconfiar <nick>
+  abandonar:
+    description: Comando para abandonar o terreno.
+    usage: /abandonar (Em cima do terreno)
+  abandonartodos:
+    description: Comando para abandonar todos os seus terrenos.
+    usage: /abandonartodos
+  lista:
+    description: Comando para visualizar todos as confianças do seu terreno.
+    usage: /lista
+  gerente:
+    description: Comando para dar permissão de admin no seu terreno.
+    usage: /gerente <nick>
+  removergerente:
+    description: Comando para tirar a permissão de admin do seu terreno.
+    usage: /removergerente <nick>
+    aliases: [desgerente,ungerente,tirargerente]
+permission:
+  mineskygf.others:
+    description: Permissão para ver os terrenos de outros jogadores.
+    default: op
+  mineskygf.fly:
+    description: Permissão para voar em seus terrenos e terrenos que tem confiaça.
+    default: op
+  mineskygf.fly.bypass:
+    description: Permissão para voar em qualquer terreno.
+    default: op
