@@ -34,7 +34,9 @@ public final class MineSkyGriefPrevention extends JavaPlugin {
         getCommand("abandonartodos").setExecutor(new AbandonarTodosCommand());
         getCommand("lista").setExecutor(new ListaCommand());
         getServer().getPluginManager().registerEvents(new ClaimEvents(), this);
-        Bukkit.getScheduler().runTaskTimer(this, this::onCheckFly, 0L, 20L);
+        getServer().getGlobalRegionScheduler().runAtFixedRate(this, task -> {
+            onCheckFly();
+        }, 1L, 20L);
         if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
             new PlaceholderAPIHook().register();
         }

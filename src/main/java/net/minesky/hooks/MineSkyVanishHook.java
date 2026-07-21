@@ -1,6 +1,6 @@
 package net.minesky.hooks;
 
-import net.mineskyvanish.api.VanishAPI;
+import net.mineskyvanish.api.vanish.VanishAPI;
 import org.bukkit.entity.Player;
 
 public class MineSkyVanishHook {

@@ -3,7 +3,7 @@ version: '1.0.2-BETA'
 main: net.minesky.MineSkyGriefPrevention
 api-version: '26.1'
 authors: [Bruno C. (zBrunoC), Giovanne D. (Drawn)]
-depend: [GriefPrevention, SuperVanish, PlaceholderAPI]
+depend: [GriefPrevention, MineSkyVanish, PlaceholderAPI]
 folia-supported: true
 commands:
   terreno:
