@@ -1,9 +1,10 @@
 name: MineSkyGriefPrevention
-version: '1.0.1-BETA'
+version: '1.0.2-BETA'
 main: net.minesky.MineSkyGriefPrevention
-api-version: '1.19'
+api-version: '26.1'
 authors: [Bruno C. (zBrunoC), Giovanne D. (Drawn)]
 depend: [GriefPrevention, SuperVanish, PlaceholderAPI]
+folia-supported: true
 commands:
   terreno:
     description: Comando para visualizar os terrenos.

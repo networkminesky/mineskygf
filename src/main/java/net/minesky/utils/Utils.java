@@ -3,7 +3,7 @@ package net.minesky.utils;
 import me.ryanhamshire.GriefPrevention.Claim;
 import me.ryanhamshire.GriefPrevention.ClaimPermission;
 import net.md_5.bungee.api.ChatColor;
-import net.minesky.hooks.SuperVanishHook;
+import net.minesky.hooks.MineSkyVanishHook;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -50,7 +50,7 @@ public class Utils {
 
     public static List<String> onlineWithoutVanished() {
         return Bukkit.getOnlinePlayers().stream()
-                .filter(b -> !SuperVanishHook.isPlayerVanished(b))
+                .filter(b -> !MineSkyVanishHook.isPlayerVanished(b))
                 .map(Player::getName)
                 .toList();
     }
