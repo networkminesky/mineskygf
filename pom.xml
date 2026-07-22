@@ -45,14 +45,13 @@
         <dependency>
             <groupId>com.github.GriefPrevention</groupId>
             <artifactId>GriefPrevention</artifactId>
-            <version>16.18.7</version>
+            <version>16.18.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.github.zBrunoC</groupId>
+            <groupId>com.github.networkminesky</groupId>
             <artifactId>mineskyvanish</artifactId>
-            <version>1.0.0</version>
-            <scope>provided</scope>
+            <version>1.0.0-BETA</version>
         </dependency>
         <dependency>
             <groupId>me.clip</groupId>
