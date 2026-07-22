@@ -50,7 +50,7 @@ public class Utils {
 
     public static List<String> onlineWithoutVanished() {
         return Bukkit.getOnlinePlayers().stream()
-                .filter(b -> !MineSkyVanishHook.isPlayerVanished(b))
+                .filter(p -> !MineSkyVanishHook.isPlayerVanished(p))
                 .map(Player::getName)
                 .toList();
     }
