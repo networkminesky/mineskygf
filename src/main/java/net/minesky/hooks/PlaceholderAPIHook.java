@@ -37,6 +37,8 @@ public class PlaceholderAPIHook extends PlaceholderExpansion {
         switch (identifier) {
             case "tag": {
                 Claim claim = GriefPrevention.instance.dataStore.getClaimAt(player.getLocation(), true, null);
+
+                if (claim == null) {
                     return "...";
                 }
 
